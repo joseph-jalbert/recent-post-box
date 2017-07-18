@@ -1,3 +1,12 @@
+<?php
+/*
+Plugin Name: Recent Post Box
+Author: Joe Jalbert
+Description: Adds a 'recent post' box to the bottom of every article, showing the newest story from the site
+*/
+ ?>
+
+
 <link rel="stylesheet" type="text/css" href="style.css">
 <aside>
   <div class='thumb'>

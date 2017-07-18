@@ -1,6 +1,3 @@
-Hello,
-
-You recently submitted an application on Indeed for the Full Stack WordPress Developer role at Adweek Magazine. If you're still interested in the position, we'd like to learn more about you and your skillset. To move along in the application process, we would love to get a relevant sample of your coding skill set. Below is a coding challenge we'd like you to complete and submit back to us. Once completed and reviewed, we will reach out to schedule a phone screening.
 
 Create a WordPress plugin based on the following requirements:
 1 Can be enabled/disabled via the Plugins admin page & includes full details for identification over other candidates’ plugins.

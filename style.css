@@ -1,0 +1,17 @@
+.thumb {
+  width: 186px;
+  height: 150px;
+  float: left;
+}
+
+.thumb > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.category {
+  font-family: Helvetica Neue;
+  font-weight: bold;
+}

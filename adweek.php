@@ -8,6 +8,8 @@ Description: Adds a 'recent post' box to the bottom of every article, showing th
 <?php
 function add_post_box($content){
   if (is_single()){
+    wp_register_style( 'adweek', plugins_url('adweek/style.css') );
+    wp_enqueue_style( 'adweek');
 
     $latest = wp_get_recent_posts(array('numberposts' => '1'))[0];
     $latestID = $latest["ID"];
@@ -15,19 +17,19 @@ function add_post_box($content){
     $post_time = get_post_time('U', false, $latestID, false);
     $author_id = $latest["post_author"];
     $author_name = get_the_author_meta("first_name",$author_id) . ' ' . get_the_author_meta("last_name",$author_id);
-    $thumb = get_the_post_thumbnail($latestID);
+    $thumb = get_the_post_thumbnail($latestID, "medium");
     $time_ago = human_time_diff($post_time, current_time('U')) . " ago";
 
-    $content .= "
+    $content .= '
       <aside>
-        <div class='thumb'>
-          <img src='image.png'>$thumb</img>
+        <div class="thumb">' . $thumb . '</div>
+        <div >
+          <h2 class="category"><a>' . $category . '</a><div class="mobile-time">|' . $time_ago . '</div></h2>
+          <div class="title">' . $latest["post_title"] . '</div>
+          <div class="desktop-info">By ' . $author_name . ' ' . $time_ago . '</div>
         </div>
-        <h2 class='category'><a>$category</a><div class='mobile-time'>| $time_ago</div></h2>
-        <div class='title'>" . $latest["post_title"] . "</div>
-        <div class='desktop-info'>By $author_name $time_ago</div>
       </aside>
-    ";
+    ';
   }
   return $content;
 }

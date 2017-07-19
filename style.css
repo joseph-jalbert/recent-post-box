@@ -1,6 +1,8 @@
 .post-box {
   display: flex;
   align-items: center; }
+  .post-box a {
+    box-shadow: none !important; }
   .post-box .thumb {
     float: left;
     height: 120px;
@@ -31,9 +33,10 @@
         margin-right: 0; } }
     .post-box .post-info .category {
       font-weight: 500;
-      color: #bbb;
       font-size: 9px;
       margin-bottom: 0; }
+      .post-box .post-info .category a {
+        color: #bbb; }
       .post-box .post-info .category .mobile-time {
         font-weight: normal;
         color: #999; }
@@ -47,8 +50,6 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 17px; }
-      .post-box .post-info .headline > a {
-        box-shadow: none !important; }
       @media (min-width: 768px) {
         .post-box .post-info .headline {
           font-size: 26px;
@@ -61,7 +62,7 @@
           font-weight: normal;
           font-size: 13px;
           color: #bbb; }
-          .post-box .post-info .desktop-info .author {
+          .post-box .post-info .desktop-info .author a {
             color: #EA3830; } }
 
 /*# sourceMappingURL=style.css.map */

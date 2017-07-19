@@ -12,6 +12,9 @@ $author-color: #EA3830;
 .post-box {
   display: flex;
   align-items: center;
+  a {
+    box-shadow: none !important;
+  }
   .thumb {
     float: left;
     height: 120px;
@@ -44,7 +47,9 @@ $author-color: #EA3830;
       }
     .category {
       font-weight: 500;
-      color: $category-color;
+      a {
+        color: $category-color;
+      }
       font-size: $mobile-cat-size;
       margin-bottom: 0;
       .mobile-time {
@@ -63,9 +68,6 @@ $author-color: #EA3830;
       font-size:$headline-size-mobile;
       font-weight: 500;
       line-height: 17px;
-      > a {
-          box-shadow: none !important;
-      }
       @media (min-width: $desktop) {
         font-size: $headline-size-desktop;
         line-height: 28px;
@@ -78,7 +80,7 @@ $author-color: #EA3830;
         font-weight: normal;
         font-size: $desktop-info-size;
         color: $category-color;
-        .author {
+        .author a {
           color: $author-color;
         }
       }

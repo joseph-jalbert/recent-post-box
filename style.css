@@ -11,13 +11,13 @@
         height: 170px;
         margin: 10px 20px;
         padding: 10px 0px; } }
-    .post-box .thumb > img {
+    .post-box .thumb img {
       width: 100px;
       height: 100px;
       object-fit: cover;
       border-radius: 3px; }
       @media (min-width: 768px) {
-        .post-box .thumb > img {
+        .post-box .thumb img {
           width: 186px;
           height: 150px; } }
   .post-box .post-info {

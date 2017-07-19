@@ -33,8 +33,11 @@ $desktop-cat-size: 14px;
 .category {
   font-family: Helvetica Neue;
   font-weight: bold;
-  font-color: $category-color;
+  color: $category-color;
   font-size: $mobile-cat-size;
+  .mobile-time {
+    font-weight: 300;
+  }
   @media (min-width: $desktop){
     font-size: $desktop-cat-size;
   }

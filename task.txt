@@ -11,3 +11,6 @@ Notes:
 • The mobile version should become enabled at any viewport less than 728px. In between these viewports, the image size and margins should remain the same, with the headline portion constricting horizontally.
 • Bonus points for using SASS / SCSS. Please include those files as well how you processed your sass.
 • Once completed, please send us the full plugin in a zip file 
+
+
+RLM: Mets, Phils, Dads, Jays, Twins, Ms, Tigers, A’s, Angels

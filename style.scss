@@ -1,5 +1,6 @@
 $desktop: 768px;
 $category-color: #bbb;
+$timestamp-color: #999;
 $mobile-cat-size: 9px;
 $desktop-cat-size: 14px;
 
@@ -11,7 +12,7 @@ $desktop-cat-size: 14px;
   margin: 10px 15px 10px 20px;
   padding: 10px 0px;
   //desktop
-  @media (min-width: $desktop){
+  @media (min-width: $desktop) {
     margin: 10px 20px;
     padding: 10px 0px;
     width: 186px;
@@ -28,18 +29,26 @@ $desktop-cat-size: 14px;
 .post-info {
     float: left;
     width: calc( 100% - 226px);
-}
-
-.category {
-  font-family: Helvetica Neue;
-  font-weight: bold;
-  color: $category-color;
-  font-size: $mobile-cat-size;
-  .mobile-time {
-    font-weight: 300;
+  .category {
+    font-family: Helvetica Neue;
+    font-weight: bold;
+    color: $category-color;
+    font-size: $mobile-cat-size;
+    .mobile-time {
+      font-weight: 300;
+      color: $timestamp-color;
+    }
+    @media (min-width: $desktop){
+      font-size: $desktop-cat-size;
+      .mobile-time {
+        display: none;
+      }
+    }
   }
-  @media (min-width: $desktop){
-    font-size: $desktop-cat-size;
+  .desktop-info {
+    display: none;
+    @media (min-width: $desktop){
+      display: block;
+    }
   }
 }
- .blah {}

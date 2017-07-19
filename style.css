@@ -19,16 +19,23 @@
 .post-info {
   float: left;
   width: calc( 100% - 226px); }
-
-.category {
-  font-family: Helvetica Neue;
-  font-weight: bold;
-  color: #bbb;
-  font-size: 9px; }
-  .category .mobile-time {
-    font-weight: 300; }
-  @media (min-width: 768px) {
-    .category {
-      font-size: 14px; } }
+  .post-info .category {
+    font-family: Helvetica Neue;
+    font-weight: bold;
+    color: #bbb;
+    font-size: 9px; }
+    .post-info .category .mobile-time {
+      font-weight: 300;
+      color: #999; }
+    @media (min-width: 768px) {
+      .post-info .category {
+        font-size: 14px; }
+        .post-info .category .mobile-time {
+          display: none; } }
+  .post-info .desktop-info {
+    display: none; }
+    @media (min-width: 768px) {
+      .post-info .desktop-info {
+        display: block; } }
 
 /*# sourceMappingURL=style.css.map */

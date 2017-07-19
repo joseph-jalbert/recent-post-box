@@ -21,10 +21,10 @@ function add_post_box($content){
     $time_ago = human_time_diff($post_time, current_time('U')) . " ago";
 
     $content .= '
-      <aside>
+      <aside class="post-box">
         <div class="thumb">' . $thumb . '</div>
-        <div >
-          <h2 class="category"><a>' . $category . '</a><div class="mobile-time">|' . $time_ago . '</div></h2>
+        <div class="post-info">
+          <h2 class="category">' . $category . '<div class="mobile-time">|' . $time_ago . '</div></h2>
           <div class="title">' . $latest["post_title"] . '</div>
           <div class="desktop-info">By ' . $author_name . ' ' . $time_ago . '</div>
         </div>

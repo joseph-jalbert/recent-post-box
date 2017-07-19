@@ -29,12 +29,23 @@ function add_post_box($content){
           <div class="desktop-info">By ' . $author_name . ' ' . $time_ago . '</div>
         </div>
       </aside>
+
     ';
   }
   return $content;
 }
 
-add_filter ('the_content', 'add_post_box', 0);
+add_filter( 'the_content', 'add_post_box', 0 );
+
+function remove_empty_p_tags($content) {
+  $content .= '<script>
+              jQuery(document).ready(function(){
+                jQuery(".post-box p:empty").remove();
+              });
+              </script>';
+  return $content;
+}
+add_filter( 'the_content', 'remove_empty_p_tags', 0 );
 
  ?>
 

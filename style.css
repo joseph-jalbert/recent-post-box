@@ -22,11 +22,12 @@
           height: 150px; } }
   .post-box .post-info {
     float: left;
-    width: calc( 100% - 226px);
+    width: calc(100% - 135px);
     margin-right: 20px;
     font-family: Helvetica Neue; }
     @media (min-width: 768px) {
       .post-box .post-info {
+        width: calc(100% - 226px);
         margin-right: 0; } }
     .post-box .post-info .category {
       font-weight: 500;

@@ -12,5 +12,3 @@ Notes:
 • Bonus points for using SASS / SCSS. Please include those files as well how you processed your sass.
 • Once completed, please send us the full plugin in a zip file 
 
-
-RLM: Mets, Phils, Dads, Jays, Twins, Ms, Tigers, A’s, Angels

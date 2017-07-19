@@ -33,13 +33,13 @@ $author-color: #EA3830;
       }
     }
   }
-
   .post-info {
       float: left;
-      width: calc( 100% - 226px);
+      width: calc(100% - 135px);
       margin-right: 20px;
       font-family: Helvetica Neue;
       @media (min-width: $desktop){
+        width: calc(100% - 226px);
         margin-right: 0;
       }
     .category {

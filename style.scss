@@ -63,6 +63,9 @@ $author-color: #EA3830;
       font-size:$headline-size-mobile;
       font-weight: 500;
       line-height: 17px;
+      > a {
+          box-shadow: none !important;
+      }
       @media (min-width: $desktop) {
         font-size: $headline-size-desktop;
         line-height: 28px;

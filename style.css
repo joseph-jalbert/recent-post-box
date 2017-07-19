@@ -1,41 +1,62 @@
-.thumb {
-  float: left;
-  width: 100px;
-  height: 100px;
-  margin: 10px 15px 10px 20px;
-  padding: 10px 0px; }
-  @media (min-width: 768px) {
-    .thumb {
-      margin: 10px 20px;
-      padding: 10px 0px;
-      width: 186px;
-      height: 150px; } }
-  .thumb > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 3px; }
-
-.post-info {
-  float: left;
-  width: calc( 100% - 226px); }
-  .post-info .category {
-    font-family: Helvetica Neue;
-    font-weight: bold;
-    color: #bbb;
-    font-size: 9px; }
-    .post-info .category .mobile-time {
-      font-weight: 300;
-      color: #999; }
+.post-box {
+  display: flex;
+  align-items: center; }
+  .post-box .thumb {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px 15px 10px 20px;
+    padding: 10px 0px; }
     @media (min-width: 768px) {
-      .post-info .category {
-        font-size: 14px; }
-        .post-info .category .mobile-time {
-          display: none; } }
-  .post-info .desktop-info {
-    display: none; }
+      .post-box .thumb {
+        margin: 10px 20px;
+        padding: 10px 0px;
+        width: 186px;
+        height: 150px; } }
+    .post-box .thumb > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 3px; }
+  .post-box .post-info {
+    float: left;
+    width: calc( 100% - 226px);
+    margin: 20px 20px 20px 0;
+    font-family: Helvetica Neue; }
     @media (min-width: 768px) {
-      .post-info .desktop-info {
-        display: block; } }
+      .post-box .post-info {
+        margin-right: 0; } }
+    .post-box .post-info .category {
+      font-weight: bold;
+      color: #bbb;
+      font-size: 9px;
+      margin-bottom: 0; }
+      .post-box .post-info .category .mobile-time {
+        font-weight: normal;
+        color: #999; }
+      @media (min-width: 768px) {
+        .post-box .post-info .category {
+          font-size: 14px; }
+          .post-box .post-info .category .mobile-time {
+            display: none; } }
+    .post-box .post-info .headline {
+      color: #333;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px; }
+      @media (min-width: 768px) {
+        .post-box .post-info .headline {
+          font-size: 26px;
+          line-height: 23px; } }
+    .post-box .post-info .desktop-info {
+      display: none; }
+      @media (min-width: 768px) {
+        .post-box .post-info .desktop-info {
+          display: block;
+          font-weight: normal;
+          font-size: 13px;
+          color: #bbb; }
+          .post-box .post-info .desktop-info .author {
+            color: #EA3830; } }
 
 /*# sourceMappingURL=style.css.map */

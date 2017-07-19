@@ -8,7 +8,7 @@ Description: Adds a 'recent post' box to the bottom of every article, showing th
 <?php
 function add_post_box($content) {
   if (is_single()){
-    wp_register_style( 'post_box', plugins_url('adweek/style.css') );
+    wp_register_style( 'post_box', plugins_url('recent-post-box/style.css') );
     wp_enqueue_style( 'post_box');
 
     $latest = wp_get_recent_posts(array('numberposts' => '1'))[0];

@@ -23,9 +23,9 @@ function add_post_box($content){
         <div class='thumb'>
           <img src='image.png'>$thumb</img>
         </div>
-        <h2 class='category'><a>$category</a><div class='mobileTime'>| $time_ago</div></h2>
+        <h2 class='category'><a>$category</a><div class='mobile-time'>| $time_ago</div></h2>
         <div class='title'>" . $latest["post_title"] . "</div>
-        <div class='info'>By $author_name $time_ago</div>
+        <div class='desktop-info'>By $author_name $time_ago</div>
       </aside>
     ";
   }
